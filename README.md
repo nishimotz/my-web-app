@@ -34,3 +34,10 @@ VS Code の拡張機能 CodeLLDB を使用します。
 ### ブラウザで確認
 
 アプリが起動したら、ブラウザで `http://localhost:3000` にアクセスし、「Hello, Rust Web!」などのレスポンスが表示されれば成功です。
+
+### Docker でビルド
+
+```bash
+docker build -t my-web-app .
+docker run -p 3000:3000 my-web-app
+```
